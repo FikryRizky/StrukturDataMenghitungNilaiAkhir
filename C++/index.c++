@@ -11,8 +11,6 @@ int main() {
     cout << "===============================" << endl;
     cout << "   MENGHITUNG NILAI AKHIR" << endl;
     cout << "===============================" << endl;
-
-    // Input data mahasiswa
     cout << "NIM             : ";
     getline(cin, nim);
     cout << "Nama            : ";
@@ -31,12 +29,9 @@ int main() {
     cin >> uas;
     cout << "Nilai Project   : ";
     cin >> project;
-
-    // Hitung nilai akhir (bisa disesuaikan bobotnya)
     nilaiAkhir = (kehadiran * 0.1) + (forum * 0.1) + (individu * 0.1) +
                  (kelompok * 0.1) + (uts * 0.2) + (uas * 0.2) + (project * 0.2);
 
-    // Menentukan huruf mutu dengan percabangan
     if (nilaiAkhir >= 85)
         hurufMutu = 'A';
     else if (nilaiAkhir >= 75)
@@ -48,7 +43,7 @@ int main() {
     else
         hurufMutu = 'E';
 
-    // Output hasil
+
     cout << endl;
     cout << "===============================" << endl;
     cout << "[ " << nim << " " << nama << " ]" << endl;
